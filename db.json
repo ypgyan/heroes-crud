@@ -15,18 +15,18 @@
       "gender": "male"
     },
     {
-      "id": 3,
-      "name": "Flash",
+      "id": 4,
+      "name": "Senhor Fantástico",
       "imageUrl": "http://i.annihil.us/u/prod/marvel/i/mg/3/40/4bb4680432f73.jpg",
-      "franchise": "dc",
+      "franchise": "marvel",
       "gender": "male"
     },
     {
-      "name": "Homem Borracha",
+      "name": "Senhor Fantástico 2",
       "imageUrl": "http://i.annihil.us/u/prod/marvel/i/mg/3/40/4bb4680432f73.jpg",
       "franchise": "marvel",
       "gender": "male",
-      "id": 4
+      "id": 5
     }
   ]
 }

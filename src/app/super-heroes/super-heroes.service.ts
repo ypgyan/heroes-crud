@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpResponse } from '@angular/common/http';
 import { SuperHeroes } from './super-heroes';
 import { Observable } from 'rxjs';
 
@@ -10,8 +10,22 @@ import { Observable } from 'rxjs';
 export class SuperHeroesService {
   constructor(private http: HttpClient) { }
 
-  get(): Observable<SuperHeroes[]> {
-    return this.http.get<SuperHeroes[]>('http://localhost:3000/superHeroes');
+  get(
+    sortColumn: string,
+    sortType: string,
+    searchKey: string,
+    currentPage: number,
+    pageSize: number
+  ): Observable<HttpResponse<any>> {
+    let url = `http://localhost:3000/superHeroes?_page=${currentPage}&_limit=${pageSize}`;
+    if (sortColumn && sortType) {
+      url = `${url}&_sort=${sortColumn}&_order=${sortType}`;
+    }
+
+    if (searchKey) {
+      url = `${url}&q=${searchKey}`;
+    }
+    return this.http.get<HttpResponse<any>>(url, { observe: 'response' });
   }
 
   add(payload: SuperHeroes) {
@@ -29,5 +43,9 @@ export class SuperHeroesService {
       `http://localhost:3000/superHeroes/${payload.id}`,
       payload
     );
+  }
+
+  delete(id: number) {
+    return this.http.delete(`http://localhost:3000/superHeroes/${id}`);
   }
 }

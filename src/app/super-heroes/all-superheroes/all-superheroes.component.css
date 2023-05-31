@@ -9,3 +9,8 @@
   flex-direction: row;
   flex-wrap: wrap;
 }
+
+.filter-container{
+  display: flex;
+  margin: 15px;
+}

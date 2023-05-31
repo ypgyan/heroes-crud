@@ -18,6 +18,9 @@ import { AddSuperheroesComponent } from './super-heroes/add-superheroes/add-supe
 import { ReactiveFormsModule } from '@angular/forms';
 import { EditSuperheroesComponent } from './super-heroes/edit-superheroes/edit-superheroes.component';
 import { DeleteDialogSuperheroesComponent } from './super-heroes/delete-dialog-superheroes/delete-dialog-superheroes.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatIconModule } from "@angular/material/icon";
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 @NgModule({
   declarations: [
@@ -40,7 +43,10 @@ import { DeleteDialogSuperheroesComponent } from './super-heroes/delete-dialog-s
     MatChipsModule,
     MatSelectModule,
     MatRadioModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatDialogModule,
+    MatIconModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
