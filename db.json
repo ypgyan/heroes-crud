@@ -3,23 +3,23 @@
     {
       "id": 1,
       "name": "Iron Man",
-      "imageUrl": "https://cdn.mos.cms.futurecdn.net/aTK8YBkBAbqCSzNGxt8adL.jpg",
+      "imageUrl": "http://i.annihil.us/u/prod/marvel/i/mg/3/40/4bb4680432f73.jpg",
       "franchise": "marvel",
       "gender": "male"
     },
     {
       "id": 2,
       "name": "Batman",
-      "imageUrl": "https://cdn.mos.cms.futurecdn.net/aTK8YBkBAbqCSzNGxt8adL.jpg",
+      "imageUrl": "http://i.annihil.us/u/prod/marvel/i/mg/3/40/4bb4680432f73.jpg",
       "franchise": "dc",
       "gender": "male"
     },
     {
+      "id": 3,
       "name": "Flash",
-      "imageUrl": "",
+      "imageUrl": "http://i.annihil.us/u/prod/marvel/i/mg/3/40/4bb4680432f73.jpg",
       "franchise": "dc",
-      "gender": "male",
-      "id": 3
+      "gender": "male"
     },
     {
       "name": "Homem Borracha",

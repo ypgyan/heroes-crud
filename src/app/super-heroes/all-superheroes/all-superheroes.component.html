@@ -20,5 +20,8 @@
       <p>Franchise - {{ item.franchise }}</p>
       <p>Gender - {{ item.gender }}</p>
     </mat-card-content>
+    <mat-card-actions>
+      <a mat-raised-button color="primary" [routerLink]="['/edit', item.id]">Edit</a>
+    </mat-card-actions>
   </mat-card>
 </div>

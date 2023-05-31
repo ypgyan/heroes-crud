@@ -14,7 +14,20 @@ export class SuperHeroesService {
     return this.http.get<SuperHeroes[]>('http://localhost:3000/superHeroes');
   }
 
-  add(payload:SuperHeroes){
+  add(payload: SuperHeroes) {
     return this.http.post('http://localhost:3000/superHeroes', payload);
+  }
+
+  getById(id: number): Observable<SuperHeroes> {
+    return this.http.get<SuperHeroes>(
+      `http://localhost:3000/superHeroes/${id}`
+    );
+  }
+
+  update(payload: SuperHeroes): Observable<SuperHeroes> {
+    return this.http.put<SuperHeroes>(
+      `http://localhost:3000/superHeroes/${payload.id}`,
+      payload
+    );
   }
 }

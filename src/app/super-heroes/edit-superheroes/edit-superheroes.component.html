@@ -1,1 +1,49 @@
-<p>edit-superheroes works!</p>
+<div class="heading">
+  <mat-chip color="primary"> Update Super Hereo </mat-chip>
+</div>
+<div class="card-container">
+  <mat-card class="card">
+    <div class="card-container">
+      <form
+        class="form-container"
+        [formGroup]="updateSuperHeroForm"
+        (ngSubmit)="update()"
+      >
+        <mat-form-field appearance="outline" style="width: 400px">
+          <mat-label>Name</mat-label>
+          <input matInput formControlName="name" />
+        </mat-form-field>
+        <mat-form-field appearance="outline" style="width: 400px">
+          <mat-label>Image URL</mat-label>
+          <input matInput formControlName="imageUrl" />
+        </mat-form-field>
+        <mat-form-field appearance="outline" style="width: 400px">
+          <mat-label>Franchise</mat-label>
+          <mat-select formControlName="franchise">
+            <mat-option value="marvel">Marvel</mat-option>
+            <mat-option value="dc">DC</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-radio-group aria-label="Select an option" formControlName="gender">
+          <mat-radio-button value="male">Male</mat-radio-button>
+          <mat-radio-button value="female">Female</mat-radio-button>
+        </mat-radio-group>
+        <button mat-raised-button color="primary" style="margin: 10px 0px">
+          Update
+        </button>
+      </form>
+      <div>
+        <div>
+          <img
+            mat-card-lg-image
+            src="{{
+              this.updateSuperHeroForm.get('imageUrl')?.value
+                ? this.updateSuperHeroForm.get('imageUrl')?.value
+                : noImage
+            }}"
+          />
+        </div>
+      </div>
+    </div>
+  </mat-card>
+</div>

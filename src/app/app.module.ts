@@ -17,13 +17,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { AddSuperheroesComponent } from './super-heroes/add-superheroes/add-superheroes.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { EditSuperheroesComponent } from './super-heroes/edit-superheroes/edit-superheroes.component';
+import { DeleteDialogSuperheroesComponent } from './super-heroes/delete-dialog-superheroes/delete-dialog-superheroes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AllSuperheroesComponent,
     AddSuperheroesComponent,
-    EditSuperheroesComponent
+    EditSuperheroesComponent,
+    DeleteDialogSuperheroesComponent
   ],
   imports: [
     BrowserModule,
