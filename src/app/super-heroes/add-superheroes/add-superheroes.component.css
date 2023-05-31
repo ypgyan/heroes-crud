@@ -1,0 +1,20 @@
+.card {
+  width: 800px;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 14px;
+  column-gap: 2em;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14px;
+}

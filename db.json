@@ -13,6 +13,20 @@
       "imageUrl": "https://cdn.mos.cms.futurecdn.net/aTK8YBkBAbqCSzNGxt8adL.jpg",
       "franchise": "dc",
       "gender": "male"
+    },
+    {
+      "name": "Flash",
+      "imageUrl": "",
+      "franchise": "dc",
+      "gender": "male",
+      "id": 3
+    },
+    {
+      "name": "Homem Borracha",
+      "imageUrl": "http://i.annihil.us/u/prod/marvel/i/mg/3/40/4bb4680432f73.jpg",
+      "franchise": "marvel",
+      "gender": "male",
+      "id": 4
     }
   ]
 }
