@@ -1,19 +1,18 @@
 {
-  "posts": [
+  "superHeroes": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "name": "Iron Man",
+      "imageUrl": "https://cdn.mos.cms.futurecdn.net/aTK8YBkBAbqCSzNGxt8adL.jpg",
+      "franchise": "marvel",
+      "gender": "male"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "name": "Batman",
+      "imageUrl": "https://cdn.mos.cms.futurecdn.net/aTK8YBkBAbqCSzNGxt8adL.jpg",
+      "franchise": "dc",
+      "gender": "male"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

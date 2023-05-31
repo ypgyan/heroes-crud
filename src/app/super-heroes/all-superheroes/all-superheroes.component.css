@@ -1,0 +1,11 @@
+.example-card {
+  max-width: 250px;
+  margin: 10px;
+  background-color: white;
+}
+.app-container {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

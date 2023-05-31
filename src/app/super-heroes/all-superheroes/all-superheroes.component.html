@@ -1,0 +1,21 @@
+<div class="app-container">
+  <mat-card class="example-card" *ngFor="let item of allSuperHeroes">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title >{{ item.name }}</mat-card-title>
+      <button
+        mat-mini-fab
+        matTooltip="Primary"
+        color="primary"
+        aria-label="Example mini fab with a heart icon"
+      >
+        {{ item.id }}
+      </button>
+    </mat-card-header>
+    <img mat-card-image src="{{ item.imageUrl }}" alt="" />
+    <mat-card-content>
+      <p>Franchise - {{ item.franchise }}</p>
+      <p>Gender - {{ item.gender }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
